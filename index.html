@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+<head>
+  <style>
+    .modal {
+      display: none; /* Modal tidak ditampilkan secara default */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: 500px; 
+        max-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+  
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+  
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+  
+    input[type="submit"] {
+        background-color: #5234eb;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+  
+    input[type="submit"]:hover {
+        background-color: #5234eb;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var modal = document.getElementById("kontakModal");
+        var btn = document.getElementById("kontakKamiBtn");
+        var span = document.getElementsByClassName("close")[0];
+  
+        // Ensure the modal is initially closed
+        modal.style.display = "none"; // This line ensures modal is closed
+  
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        }
+  
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+  
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+  </script>
+    
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>AromaNesia</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Business Bootstrap Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Promodise Template v1.0">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="promodise" />
+  
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <!-- Icofont -->
+  <link rel="stylesheet" href="plugins/icofont/icofont.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!--Favicon-->
+  <link rel="icon" href="img/ini.png" type="image/x-icon">
+
+</head><body data-spy="scroll" data-target="#mainNav">
+
+<nav class="navbar navbar-expand-lg fixed-top trans-navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="" class="img-fluid b-logo" width="50px" height="15px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-bars"></i>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link smoth-scroll" href="#profilusaha">Profil Usaha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smoth-scroll" href="#daftarproduk">Produk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smoth-scroll" href="#tentang">Tentang Saya</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link smoth-scroll" href="#kontak">Kontak Kami</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="profilusaha" class="section-padding"></section>
+  <div class="container">
+      <h1>AromaNesia</h1>
+      <br>
+      <p>
+          "AromaNesia" merupakan perusahaan yang menawarkan parfum dari HMNS, brand lokal dengan kualitas premium dan aroma khas yang tak terlupakan. AromaNesia hadir untuk memenuhi kebutuhan pasar yang mencari parfum dengan wangi unik, tahan lama, dan cocok digunakan sehari-hari, baik untuk acara formal maupun kasual. Kami menawarkan berbagai varian aroma yang mampu menciptakan kesan mendalam dan personal.
+      </p>
+      <p>
+          Parfum dari HMNS yang kami jual diracik dari bahan-bahan berkualitas tinggi, mengutamakan campuran aroma yang elegan namun modern. Dengan desain botol yang minimalis namun menarik, produk ini sangat cocok bagi mereka yang ingin tampil percaya diri dan meninggalkan kesan positif pada setiap kesempatan. Kami juga menyediakan layanan konsultasi aroma bagi pelanggan yang ingin menemukan wangi yang paling sesuai dengan kepribadian mereka.
+      </p>
+      <p>
+          AromaNesia tidak hanya menawarkan produk, tetapi juga pengalaman membeli parfum yang personal dan eksklusif. Setiap parfum dikemas dengan cermat dan dapat dijadikan sebagai hadiah istimewa untuk orang terdekat. Kami juga menyediakan opsi pengiriman yang cepat dan aman, memastikan produk sampai dengan sempurna di tangan pelanggan.
+      </p>
+  </div>
+</section>
+</div>
+</section>
+
+<section id="daftarproduk">
+  <br>
+  <br>
+  <br>
+  <br>
+</section>
+
+<section id="daftarproduk2">
+  <div class="container">
+    <table>
+      <thead>
+          <tr>
+              <th>Nama Produk         </th>
+              <th>Gambar Produk          </th>
+              <th> Deskripsi             </th>
+              <th>Harga</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>HMNS Lady</td>
+              <td><img src="img/parfum.png" alt="HMNS Orgs" width="300" height="300"></td>
+              <td>HMNS</td>
+              <td></td>
+              <td>Rp 323.000</td>
+          </tr>
+          <tr>
+              <td>HMNS Essense of The Sun (EOS)</td>
+              <td><img src="img/eos.png" alt="HMNS EOS" width="300" height="300"></td>
+              <td></td>
+              <td>Rp 369.000</td>
+          </tr>
+          <tr>
+              <td>HMNS Room Full of Ideas</td>
+              <td><img src="img/roomfull.png" alt="Room of" width="300" height="300"></td>
+              <td></td>
+              <td>Rp 269.000</td>
+          </tr>
+      </tbody>
+  </table>
+
+  <section id="tentang">
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+
+  </div>
+</section>
+
+
+<section id="tentang2" class="section-padding bg-main">
+  <div class="container">
+            <h1>Tentang Saya</h1>
+            <div style="display: flex; justify-content: center;">
+            <img src="img/saya.png" id="fotosaya" alt="Foto Tivosi Pandya Arkana" width="300" height="300">
+            </div>
+            <h4>Informasi Dasar</h4>
+            <p><strong>Nama:</strong> Tivosi Pandya Arkana</p>
+            <p><strong>Asal Daerah:</strong> Surabaya</p>
+            <p><strong>SMA Asal:</strong> SMA 17 Agustus 1945 Surabaya</p>
+
+            <h4>Motivasi Studi di Sistekin</h4>
+            <p>Jurusan Sistem dan Teknologi Informasi memberikan kesempatan untuk belajar berbagai keterampilan penting. Saya tertarik untuk memahami lebih dalam bagaimana teknologi dapat dikembangkan dan dikelola. Selain itu, bidang ini membuka peluang karir yang sangat luas di berbagai sektor industri. Saya berharap untuk terus belajar dan berkembang dalam lingkungan yang menantang ini. Dengan semangat inovasi, saya yakin bahwa saya bisa berkontribusi secara signifikan di masa depan.</p>
+
+            <h4>Resume HTML</h4>
+            <p>Saya mempelajari dasar-dasar HTML yang merupakan bahasa utama dalam membangun halaman web. HTML membantu dalam membentuk kerangka dasar yang sangat penting bagi sebuah halaman web. Saya belajar bagaimana menggunakan elemen-elemen seperti paragraf, gambar, dan tautan untuk menampilkan informasi. Selain itu, struktur yang rapi dan penggunaan tag yang tepat membuat halaman web lebih mudah dibaca dan dikelola. Pemahaman ini menjadi fondasi yang kuat untuk membangun halaman web yang lebih kompleks.</p>
+
+            <p>Selanjutnya, saya juga mempelajari cara menggunakan atribut HTML yang memberikan informasi tambahan pada elemen tertentu. Atribut seperti "src" pada gambar dan "href" pada tautan sangat penting dalam menghubungkan halaman web dengan sumber eksternal. Atribut ini memungkinkan halaman web untuk lebih interaktif dan fungsional. Dengan penggunaan yang tepat, halaman web dapat memberikan pengalaman yang lebih baik bagi pengguna. Pemahaman ini sangat penting dalam pembuatan halaman web yang efektif dan dinamis.</p>
+
+            <p>Saya juga belajar bagaimana HTML bekerja sama dengan CSS untuk memperindah tampilan halaman web. CSS memungkinkan saya untuk mengubah tampilan elemen seperti warna, tata letak, dan ukuran font. Dengan kombinasi HTML dan CSS, saya bisa menciptakan halaman web yang tidak hanya fungsional, tetapi juga menarik secara visual. Ini membantu menciptakan pengalaman yang lebih baik bagi pengguna. Pemahaman dasar ini menjadi langkah awal yang penting dalam dunia pengembangan web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="kontak" class="section-padding">
+  <div class="container">
+    <h1>Kontak Kami</h1>
+    <button id="kontakKamiBtn">Kontak Kami</button>
+
+    <div id="kontakModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h5>Formulir Pemesanan</h6>
+            <form id="kontakForm" action="submit.html" method="POST">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea><br>
+
+                <input type="submit" value="Kirim">
+            </form>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="footer" class="section-padding">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-4">
+        <div class="footer-widget footer-link">
+          <h4>AromaNesia - Your Premium Fragrance</h4>
+          <p>Kami berkomitmen untuk menyediakan parfum premium yang memberikan pengalaman aroma tak terlupakan. AromaNesia mendukung gaya hidup modern dengan sentuhan elegan pada setiap wewangian.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="footer-widget footer-link">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#profilusaha">Profil Usaha</a></li>
+            <li><a href="#daftarproduk">Produk</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#kontak">Kontak Kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="footer-widget footer-link">
+          <h4>Informasi Lainnya</h4>
+          <ul>
+            <li><a href="#!">Kebijakan Privasi</a></li>
+            <li><a href="#!">Syarat & Ketentuan</a></li>
+            <li><a href="#!">Dukungan</a></li>
+            <li><a href="#!">Hubungi Kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12">
+        <div class="footer-widget footer-text">
+          <h4>Lokasi Kami</h4>
+          <p class="mail"><span>Email:</span> pandya.bc615@gmail.com </p>
+          <p><span>Telepon :</span>+62-812-3456-7890</p>
+          <p><span>Alamat:</span> Jl. Sudirman No. 45, Surabaya, Indonesia</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="footer-copy">
+          Copyright &copy; 2024, AromaNesia. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap css -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+    <script src="plugins/google-map/map.js"></script>
+
+    <!-- main script -->
+    <script src="js/script.js"></script>
+
+  </body>
+  </html>
+   
